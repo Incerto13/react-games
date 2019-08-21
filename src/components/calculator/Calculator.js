@@ -25,7 +25,14 @@ const Calculator = () => {
 
   // this calculates based upon the value (expression) currently on the Screen
   const evalScreen = () => {
-    setExpression(eval(expression));
+
+    try {
+      setExpression(eval(expression));
+  } catch (e) {
+          alert(e.message);
+          // clear expression
+          setExpression("");  
+  } 
   };
 
   console.log(expression);
