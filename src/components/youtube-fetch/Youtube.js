@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ChannelSelector from './ChannelSelector';
 
-const API_KEY = 'AIzaSyA7nP9HDYF2OvOpp1Ryp55J0um-b14V91Y'; 
+const API_KEY = process.env.REACT_APP_YOUTUBE_API_KEY;
               
 const channels = {
   simpsons: "UCjQyoKg38Her282_PUiEI7Q", // good
@@ -50,12 +50,10 @@ class Youtube extends Component {
 
   clicked() {
   let finalURL = `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${this.state.channelID}&part=snippet,id&order=date&maxResults=${numVids}`;
-  // console.log(this.channelID);  
-  // console.log(finalURL);
     fetch(finalURL) // fetch to this url brings up all of the videos
       .then(response => response.json())
       .then(responseJson => {
-        // console.log(responseJson);
+   
         const resultyt = responseJson.items.map(
           obj => "https://www.youtube.com/embed/" + obj.id.videoId
         );
@@ -71,13 +69,11 @@ class Youtube extends Component {
   }
 
   render() {
-    console.log(this.state.resultyt);
-    console.log(`channelID = ${this.state.channelID}`);
     return (
       <div>
         <ChannelSelector onChangeChannel={this.onChangeChannel} />
         {this.state.resultyt.map((link, i) => {
-          console.log(link);
+        
           let frame = (
             <div key={i} className="youtube">
               <iframe title={i} width="560" height="315" src={link} frameBorder="0"
