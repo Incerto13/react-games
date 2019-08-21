@@ -1,0 +1,32 @@
+body {
+  background-color: none;
+}
+
+.link-container {
+  display: table;
+  margin-left: 40px;
+}
+
+.row {
+  display: table-cell;
+  position: relative;
+  table-layout: fixed;
+  display: inline-block;
+}
+
+.cell {
+  border: 1px solid #ddd;
+  border-radius: 4px; /* Rounded border */
+  margin-right: 30px;
+  width: 45%;
+  display: inline-block;
+}
+
+/* Add a hover effect (blue shadow) */
+.cell:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.bottom-row {
+  margin-top: 30px;
+}

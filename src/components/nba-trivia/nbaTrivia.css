@@ -1,0 +1,79 @@
+.App {
+  text-align: center;
+}
+
+.radioLeft {
+  margin-left: 45%;
+  text-align: left;
+}
+
+.radio-input {
+  margin-right: 10px;
+}
+
+.submit {
+  margin-left: 500px;
+  margin-bottom: 10px;
+}
+
+.column {
+  display: inline-block;
+  /* float: center; */
+  width: 33.33%;
+  position: relative;
+}
+
+.results-container {
+  background-color: none;
+}
+
+.one-row {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  border-style: double;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* preserve aspect ratio of images */
+#theImage {
+  width: 75%;
+  height: auto;
+}
+
+/* using vh's here to avoid distortion from zooming */
+#header {
+  padding-top: 14px;
+  height: 10vh;
+  line-height: 10vh;
+  font-size: 10vh;
+  text-align: center;
+  font-family: "lucida Sans Unicode", "Lucida Grande", "Lucida Sans";
+  font-weight: 600;
+}
+
+.quizResults {
+  margin-top: 10px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.resultText {
+  padding: 5px;
+  text-align: left;
+  font-size: 12px;
+}
+
+.body {
+  margin-top: 20px;
+}
