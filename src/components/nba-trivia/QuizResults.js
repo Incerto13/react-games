@@ -8,15 +8,14 @@ class QuizResults extends Component {
         <h4>Quiz Results</h4>
         <br />
         <div className="results-container">
-          <div className="one-row flex">
-            <div className="col-lg-4 col-sm-6">
+          <div className="one-row">
+          
               {/* Reduces size down to standard regardless of actual size if img */}
               <div className="thumbnail">
                 <img alt="whatever" src={this.props.questionImages[0]} />
               </div>
-            </div>
 
-            <div className="col-lg-8 col-sm-12 resultText">
+            <div className="resultText">
               <h6>Question 1</h6>
               <strong>Question: </strong>
               {this.props.questionPrompts[0]}
@@ -32,13 +31,13 @@ class QuizResults extends Component {
               <br />
             </div>
           </div>
-          <div className="one-row flex">
-            <div className="col-lg-4 col-sm-6">
+          <div className="one-row">
+   
               <div className="thumbnail">
                 <img alt="whatever" src={this.props.questionImages[1]} />
               </div>
-            </div>
-            <div className="col-lg-8 col-sm-12 resultText">
+          
+            <div className="resultText">
               <h6>Question 2</h6>
               <strong>Question: </strong>
               {this.props.questionPrompts[1]}
@@ -54,13 +53,13 @@ class QuizResults extends Component {
               <br />
             </div>
           </div>
-          <div className="one-row flex">
-            <div className="col-lg-4 col-sm-6">
+          <div className="one-row">
+         
               <div className="thumbnail">
                 <img alt="whatever" src={this.props.questionImages[2]} />
               </div>
-            </div>
-            <div className="col-lg-8 col-sm-12 resultText">
+         
+            <div className="resultText">
               <h6>Question 3</h6>
               <strong>Question: </strong>
               {this.props.questionPrompts[2]}
@@ -77,13 +76,12 @@ class QuizResults extends Component {
             </div>
           </div>
 
-          <div className="one-row flex">
-            <div className="col-lg-4 col-sm-6">
+          <div className="one-row">
               <div className="thumbnail">
                 <img alt="whatever" src={this.props.questionImages[3]} />
               </div>
-            </div>
-            <div className="col-lg-8 col-sm-12 resultText">
+           
+            <div className="resultText">
               <h6>Question 4</h6>
               <strong>Question: </strong>
               {this.props.questionPrompts[3]}
@@ -100,13 +98,12 @@ class QuizResults extends Component {
             </div>
           </div>
 
-          <div className="one-row flex">
-            <div className="col-lg-4 col-sm-6">
+          <div className="one-row">
               <div className="thumbnail">
                 <img alt="whatever" src={this.props.questionImages[4]} />
               </div>
-            </div>
-            <div className="col-lg-8 col-sm-12 resultText">
+          
+            <div className="resultText">
               <h6>Question 5</h6>
               <strong>Question: </strong>
               {this.props.questionPrompts[4]}

@@ -27,11 +27,25 @@
   background-color: none;
 }
 
+.thumbnail {
+  float: left;
+  padding: 5px;
+}
+
 .one-row {
-  width: 100%;
+  width: 95%;
   margin: 0 auto;
-  position: relative;
   border-style: double;
+  display: inline-block;
+}
+
+.resultText {
+  /* max-width: 40%; */
+  margin-left: 10px;
+  padding: 5px;
+  text-align: left;
+  font-size: 12pt;
+  overflow: hidden;
 }
 
 /* Clear floats after the columns */
@@ -65,13 +79,7 @@
 .flex {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 20px;
-}
-
-.resultText {
-  padding: 5px;
-  text-align: left;
-  font-size: 12px;
+  /* margin-top: 20px; */
 }
 
 .body {
