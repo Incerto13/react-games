@@ -1,0 +1,8 @@
+version: "3"
+services:
+  react-games:
+    container_name: react-games
+    build: .
+    image: react-games
+    ports:
+      - "8013:80"
