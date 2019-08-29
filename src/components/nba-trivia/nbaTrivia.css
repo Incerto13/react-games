@@ -16,13 +16,6 @@
   margin-bottom: 10px;
 }
 
-.column {
-  display: inline-block;
-  /* float: center; */
-  width: 33.33%;
-  position: relative;
-}
-
 .results-container {
   background-color: none;
 }
@@ -55,21 +48,35 @@
   clear: both;
 }
 
-/* preserve aspect ratio of images */
-#theImage {
-  width: 75%;
-  height: auto;
+.title-column {
+  display: inline-block;
+  /* float: center; */
+  /* position: relative; */
 }
+
+/* preserve aspect ratio of images */
+#nbaLogos {
+  width: 500px;
+  min-width: 450px;
+  max-width: 600px;
+  /* height: 10vh; */
+}
+
+/* .title-block {
+  display: inline-block;
+} */
 
 /* using vh's here to avoid distortion from zooming */
 #header {
-  padding-top: 14px;
-  height: 10vh;
-  line-height: 10vh;
-  font-size: 10vh;
+  /* height: 10vh; */
+  /* line-height: 10vh; */
+  /* font-size: 10vh; */
+  font-size: 80px;
   text-align: center;
   font-family: "lucida Sans Unicode", "Lucida Grande", "Lucida Sans";
   font-weight: 600;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .quizResults {

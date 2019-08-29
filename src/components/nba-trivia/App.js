@@ -80,14 +80,14 @@ class App extends Component {
     return (
       <div className="App">
         <div className="jumbotron">
-          <div className="column img-wrapper">
-            <img id="theImage" alt="nba-logos" src={left_logo} />
+          <div className="title-column">
+            <img id="nbaLogos" alt="nba-logos" src={left_logo} />
           </div>
-          <div className="column">
+          <div className="title-column">
             <p id="header">NBA Trivia</p>
           </div>
-          <div className="column img-wrapper">
-            <img id="theImage" alt="nba-logos" src={right_logo} />
+          <div className="title-column">
+            <img id="nbaLogos" alt="nba-logos" src={right_logo} />
           </div>
         </div>
 
